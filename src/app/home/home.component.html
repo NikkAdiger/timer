@@ -1,0 +1,38 @@
+<main>
+  <div class="row">
+    <div class="col-4 offset-4 col">
+
+      <div class="progress">
+        <div class="progress-bar" role="progressbar"
+             [ngStyle] = "{width: getProgress()}"
+             aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-4 offset-4 col">
+      <div class="tablo"> {{ count }}</div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-4">
+      <button class="btn btn-success"
+              (click)="startCount()"
+      >PUSH-IN
+      </button>
+    </div>
+    <div class="col-4">
+      <input
+        type="number"
+        [(ngModel)]="countStart"
+      >
+    </div>
+    <div class="col-4">
+      <button class="btn btn-danger"
+              (click)="stopCount()"
+      >PUSH-OUT
+      </button>
+    </div>
+
+  </div>
+</main>

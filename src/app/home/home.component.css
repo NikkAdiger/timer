@@ -1,0 +1,16 @@
+main {
+  padding-top: 100px;
+  width: 900px;
+  margin: 0 auto;
+}
+.row {
+  text-align: center;
+  margin: 0 auto;
+}
+.col {
+  font-size: 3em;
+  margin: 0 auto;
+}
+input {
+  text-align: center;
+}
